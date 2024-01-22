@@ -1,0 +1,58 @@
+.sidebar { 
+  position: fixed;
+  left: 0;
+  top: 40px;
+  bottom: 0;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 18px;
+}
+
+
+.sidebar-button{ 
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.sidebar-button > img { 
+  margin-bottom: 5px;
+}
+
+.home-icon{ 
+  width: 24px;
+}
+
+.explore-icon {
+  width: 24px;
+}
+
+.subscriptions-icon{ 
+  width: 24px;
+}
+
+.history-icon {
+  width: 24px;
+}
+
+.settings-icon {
+  width: 24px;
+}
+
+.help-icon {
+  width: 24px;
+}
+
+
+
+.sidebar-button:hover {
+ box-shadow: inset 0px 0px 5px rgba(26, 176, 236, 0.6);
+}
+
+.home-icon{ 
+  width: 30px;
+}
+
