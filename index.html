@@ -1,398 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StreamSpace</title> 
+  <title>StreamSpace</title>
 
-  <!--Roboto-->
-  <!--
+  <link rel="stylesheet" href="assets/css/general.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/video.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  -->
-  <!--Inter-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+  rel="stylesheet">
   
-
-
-  <link rel="stylesheet" href="stilime/te-pergjithshme.css">
-  <link rel="stylesheet" href="stilime/header.css">
-  <link rel="stylesheet" href="stilime/video.css">
-  <link rel="stylesheet" href="stilime/sidebar.css">
 </head>
 <body>
 
-
-  <!--=======Navigation Bar============-->
-
-   <div class="header">
-
+  <!--Navbar-->
+  <nav class="header">
     <div class="left-side">
-      <img class="hamburger-icon"
-       src="asete/ikona/hamburger-icon.png">
-
-       <!--
-       <img class="youtube-logo" 
-       src="asete/ikona/youtube-logo.svg">
-       -->
-       <h4 class="stream-space--title">StreamSpace</h4>
+      <img src="assets/streamspace/streamspace-logo.png"
+      class="streamspace-logo">
+      <img src="assets/streamspace/streamspace-text.png"
+      class="streamspace-text">
     </div>
-
-
     <div class="center">
-      <input class="search-engine"  type="text"
-      placeholder="Search">
+      <div class="searchbox">
+        <input type="text" class="search-input"
+        placeholder="Search ">
+       
+        <img src="assets/icons/search-icon.svg"
+        class="search-icon">
+      </div>
+     
+    </div>
+    <div class="right-side">
+      <button class="log-button login-btn">
+        Log in
+      </button>
+      <div class="straight-line">
 
-      <button class="butoni-search">
-        <img src="asete/ikona/search-icon.png" class="search-icon">
+      </div>
+      <button class="log-button signup-btn">
+        Sign Up
       </button>
 
-      <img src="asete/ikona/voice-search-icon.svg" class="voice-search--icon">
-      <!--
-      <button class="butoni-voice-search">
-        <img src="asete/ikona/voice-search-icon.svg" class="voice-search--icon">
-      </button>-->
+      <button class="log-button both-btn">
+        Register
+      </button>
+    
 
     </div>
-
-    <div class="ana-e-djathte">
-
-      <h5 class="profile-name">Sabian Zhupa</h5>
-
-      <img class="open-profile--icon"
-      src="asete/ikona/profile-icon.svg">
-
-    </div>
-
-   </div>
-   <!--==============End Navigation Bar==================-->
+  </nav>
 
 
+  
+  <div class="video-grid">
 
-
-
-   <!--================SideBar====================-->
-
-   <div class="sidebar">
-
-    <div class="sidebar-button">
-      <img src="asete/ikona/home-icon.png" class="home-icon">
-      <div>Home</div>
-    </div>
-
-    <div class="sidebar-button">
-      <img src="asete/ikona/explore-icon.png" class="explore-icon">
-      <div>Explore</div>
-    </div>
-
-    <div class="sidebar-button">
-      <img src="asete/ikona/subscriptions-icon.png" class="subscriptions-icon">
-      <div>Subscriptions</div>
-    </div>
-
-    <div class="sidebar-button">
-      <img src="asete/ikona/history-icon.png" class="history-icon">
-      <div>History</div>
-    </div>
-
-    <div class="sidebar-button">
-      <img src="asete/ikona/settings-icon.png" class="settings-icon">
-      <div>Settings</div>
-    </div>
-
-
-    <div class="sidebar-button">
-      <img src="asete/ikona/help-icon.png" class="help-icon">
-      <div>Help</div>
-    </div>
-
-
-
-   </div>
-
-
-   <!--================End SideBar================-->
-
-   
-   <div class="video-grid">
-
+    <!--video template-->
     <div class="video-template">
-      <!--Shtresa vertikale-->
-      <div class="mbajtesi-kopertines">
-        <img class="kopertina" 
-        src="asete/kopertina/kopertina01.webp">
-      </div>
-      <!--Shtresa vertikale-->
-      <div class="grid-info">
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-foto-profili">
-          <img class="foto-profili"
-          src="asete/foto-profili/foto-profili01.jpg">
+      <img src="assets/covers/cover01.webp" class="cover">
+
+      <div class="bottom-container">
+        <div class="channel-container">
+          <img src="assets/channels/channel01.jpg" class="channel-img">
         </div>
-        <div class="mbajtesi-informacionit">
-          <p class="titulli">
-            PLaystation 5 Unboxing & Accessories
-          </p>
-        
-          <p class="autori">
-            Marques Brownlee
-          </p>
-        
-          <p class="statistikat">
-            14M viewers &#183; 3 years ago
-        </p>
+        <div class="stats-container">
+            <p class="video-title">LIVE: Total solar eclipse 2024</p>
+            <p class="author">ABC News</p>
+            <p class="statistics">1.2M 
+            <span><img src="assets/icons/view-icon.svg" alt="views"
+            class="view-icon"> </span> watching</p>
         </div>
       </div>
     </div>
-  
-  
-  
-     <div class="video-template">
-      <!--Shtresa vertikale-->
-      <div class="mbajtesi-kopertines">
-        <img class="kopertina"
-         src="asete/kopertina/kopertina02.webp">
-      </div>
-      <!--Shtresa vertikale-->
-      <div class="grid-info">
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-foto-profili">
-          <img class="foto-profili"
-          src="asete/foto-profili/foto-profili02.jpg">
+    <!--end video template-->
+
+        <!--video template-->
+        <div class="video-template">
+          <img src="assets/covers/cover02.webp" class="cover">
+          <div class="bottom-container">
+            <div class="channel-container">
+              <img src="assets/channels/channel02.jpg" class="channel-img">
+            </div>
+            <div class="stats-container">
+                <p class="video-title">
+                  Live Bitcoin & Ethereum Signals
+                </p>
+                <p class="author">Infinity Algo</p>
+                <p class="statistics">950 
+                <span> <img src="assets/icons/view-icon.svg" alt="views"
+                class="view-icon"> </span> watching</p>
+            </div>
+    
+          </div>
         </div>
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-informacionit">
-          <p class="titulli">
-            I Built 100 Wells In Africa
-          </p>
-        
-          <p class="autori">
-            MrBeast &#10003;
-          </p>
-        
-          <p class="statistikat">
-            105M viewers &#183; 11 days ago
-          </p>
-        </div>
-      </div>
-     </div>
-
-
-     <div class="video-template">
-      <!--Shtresa vertikale-->
-      <div class="mbajtesi-kopertines">
-        <img class="kopertina" 
-        src="asete/kopertina/kopertina03.webp">
-      </div>
-      <!--Shtresa vertikale-->
-      <div class="grid-info">
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-foto-profili">
-          <img class="foto-profili"
-          src="asete/foto-profili/foto-profili03.jpg">
-        </div>
-  
-        <div class="mbajtesi-informacionit">
-          <p class="titulli">
-           
-             I 'm Buying A Jet...
-          </p>
-        
-          <p class="autori">
-            Iman Gadzhi ✓
-          </p>
-        
-          <p class="statistikat">
-            1.3M views &#183; 3 months ago
-        </p>
-        </div>
-      </div>
-  
-     </div>
-  
-  
-  
-     
-     <div class="video-template">
-      <!--Shtresa vertikale-->
-      <div class="mbajtesi-kopertines">
-        <img class="kopertina"
-         src="asete/kopertina/kopertina04.webp">
-      </div>
-      <!--Shtresa vertikale-->
-      <div class="grid-info">
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-foto-profili">
-          <img class="foto-profili"
-          src="asete/foto-profili/foto-profili04.jpg">
-        </div>
-
-  
-  
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-informacionit">
-          <p class="titulli">
-            
-          Bë PC më të shpejtë në 1 minutë! - Said Dulevic
-          </p>
-        
-          <p class="autori">
-            Said Dulevic
-          </p>
-        
-          <p class="statistikat">
-            818 views &#183; 1 month ago
-          </p>
-        </div>
-      </div>
-  
-     </div>
-
-
-
-     <div class="video-template">
-      <!--Shtresa vertikale-->
-      <div class="mbajtesi-kopertines">
-        <img class="kopertina" 
-        src="asete/kopertina/kopertina05.webp">
-      </div>
-      <!--Shtresa vertikale-->
-      <div class="grid-info">
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-foto-profili">
-          <img class="foto-profili"
-          src="asete/foto-profili/foto-profili05.jpg">
-        </div>
-  
-        <div class="mbajtesi-informacionit">
-          <p class="titulli">
-            The Social Media Opportunity In 2024
-          </p>
-        
-          <p class="autori">
-            GaryVee 
-          </p>
-        
-          <p class="statistikat">
-            57K views &#183; 3 days ago
-        </p>
-        </div>
-      </div>
-  
-     </div>
-  
-  
-     <div class="video-template">
-      <!--Shtresa vertikale-->
-      <div class="mbajtesi-kopertines">
-        <img class="kopertina"
-         src="asete/kopertina/kopertina06.webp">
-      </div>
-      <!--Shtresa vertikale-->
-      <div class="grid-info">
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-foto-profili">
-          <img class="foto-profili"
-          src="asete/foto-profili/foto-profili06.jpg">
-        </div>
-
-  
-  
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-informacionit">
-          <p class="titulli">
-            What is ChatGPT? OpenAI's Chat GPT Explained
-          </p>
-        
-          <p class="autori">
-            How it Happened
-          </p>
-        
-          <p class="statistikat">
-            1.5M views &#183; 11 months ago
-          </p>
-        </div>
-      </div>
-  
-     </div>
-
-
-     
-     <div class="video-template">
-      <!--Shtresa vertikale-->
-      <div class="mbajtesi-kopertines">
-        <img class="kopertina" 
-        src="asete/kopertina/kopertina07.webp">
-      </div>
-      <!--Shtresa vertikale-->
-      <div class="grid-info">
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-foto-profili">
-          <img class="foto-profili"
-          src="asete/foto-profili/foto-profili07.jpg">
-        </div>
-  
-        <div class="mbajtesi-informacionit">
-          <p class="titulli">
-           iPhone 15 Pro Max Vs Samsung Galaxy S23 Ultra
-          </p>
-        
-          <p class="autori">
-            DrDebox
-          </p>
-        
-          <p class="statistikat">
-            966K views &#183; 1 month ago
-        </p>
-        </div>
-      </div>
-  
-     </div>
-
-
-     
-     <div class="video-template">
-      <!--Shtresa vertikale-->
-      <div class="mbajtesi-kopertines">
-        <img class="kopertina" 
-        src="asete/kopertina/kopertina08.webp">
-      </div>
-      <!--Shtresa vertikale-->
-      <div class="grid-info">
-        <!--Shtrese horizontale-->
-        <div class="mbajtesi-foto-profili">
-          <img class="foto-profili"
-          src="asete/foto-profili/foto-profili08.jpg">
-        </div>
-  
-        <div class="mbajtesi-informacionit">
-          <p class="titulli">
-            1470HP Bugatti Veyron | Forza Horizon 5
-          </p>
-        
-          <p class="autori">
-            SRT <Style></Style>
-          </p>
-        
-          <p class="statistikat">
-           10M views &#183; 10 months ago
-        </p>
-        </div>
-      </div>
-  
-     </div>
-  
-  
-
-
-
-   </div>
-
-
+        <!--end video template-->
    
 
+
+        
+        <!--video template-->
+        <div class="video-template">
+          <img src="assets/covers/cover03.webp" class="cover">
+          <div class="bottom-container">
+            <div class="channel-container">
+              <img src="assets/channels/channel03.jpg" class="channel-img">
+            </div>
+            <div class="stats-container">
+                <p class="video-title">
+                Israeli Media Company" - Andrew Schulz 
+                </p>
+                <p class="author">Valuetainment</p>
+                <p class="statistics">100K 
+                <span> <img src="assets/icons/view-icon.svg" alt="views"
+                class="view-icon"> </span> watching</p>
+            </div>
+    
+          </div>
+        </div>
+        <!--end video template-->
+
+
+        <!--video template-->
+        <div class="video-template">
+          <img src="assets/covers/cover04.webp" class="cover">
+          <div class="bottom-container">
+            <div class="channel-container">
+              <img src="assets/channels/channel04.jpg" class="channel-img">
+            </div>
+            <div class="stats-container">
+                <p class="video-title">
+                  THE LAST OF US 2 PS5
+                </p>
+                <p class="author">Shirrako</p>
+                <p class="statistics">700 
+                <span> <img src="assets/icons/view-icon.svg" alt="views"
+                class="view-icon"> </span> watching</p>
+            </div>
+          </div>
+        </div>
+        <!--end video template-->
+
+
+
+        
+        <!--video template-->
+        <div class="video-template">
+          <img src="assets/covers/cover05.webp" class="cover">
+          <div class="bottom-container">
+            <div class="channel-container">
+              <img src="assets/channels/channel05.jpg" class="channel-img">
+            </div>
+            <div class="stats-container">
+                <p class="video-title">
+                  The drive
+                </p>
+                <p class="author">VISUALDON</p>
+                <p class="statistics">240 
+                <span> <img src="assets/icons/view-icon.svg" alt="views"
+                class="view-icon"> </span> watching</p>
+            </div>
+          </div>
+        </div>
+        <!--end video template-->
+
+
+
+                
+        <!--video template-->
+        <div class="video-template">
+          <img src="assets/covers/cover06.webp" class="cover">
+          <div class="bottom-container">
+            <div class="channel-container">
+              <img src="assets/channels/channel06.jpg" class="channel-img">
+            </div>
+            <div class="stats-container">
+                <p class="video-title">
+                  Music Mix 2024
+                </p>
+                <p class="author">EDM Sensei</p>
+                <p class="statistics">218K 
+                <span> <img src="assets/icons/view-icon.svg" alt="views"
+                class="view-icon"> </span> watching</p>
+            </div>
+          </div>
+        </div>
+        <!--end video template-->
+
+
+        <!--video template-->
+        <div class="video-template">
+          <img src="assets/covers/cover07.webp" class="cover">
+          <div class="bottom-container">
+            <div class="channel-container">
+              <img src="assets/channels/channel07.jpg" class="channel-img">
+            </div>
+            <div class="stats-container">
+                <p class="video-title">
+                  The Amazing World of Elmore
+                </p>
+                <p class="author">The Amazing World of Gumball</p>
+                <p class="statistics">118K 
+                <span> <img src="assets/icons/view-icon.svg" alt="views"
+                class="view-icon"> </span> watching</p>
+            </div>
+          </div>
+        </div>
+        <!--end video template-->
+
+                  
+        <!--video template-->
+        <div class="video-template">
+          <img src="assets/covers/cover08.webp" class="cover">
+          <div class="bottom-container">
+            <div class="channel-container">
+              <img src="assets/channels/channel08.jpg" class="channel-img">
+            </div>
+            <div class="stats-container">
+                <p class="video-title">
+                  The Jordan Peterson Interview
+                </p>
+                <p class="author">George Janko</p>
+                <p class="statistics">137K 
+                <span> <img src="assets/icons/view-icon.svg" alt="views"
+                class="view-icon"> </span> watching</p>
+            </div>
+          </div>
+        </div>
+        <!--end video template-->
+
+
+
+
+
+
+  </div>
+  <!--Video grid end-->
+
+ 
+  
 </body>
 </html>
